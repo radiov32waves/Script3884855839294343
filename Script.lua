@@ -21,12 +21,12 @@ local PremiumIds = {
 
 function LoadScript()
     local Window = Nova:MakeWindow({
-        Name          = "LucasHub | by radiov32waves",
-        IntroEnabled  = true,
-        IntroText     = "Welcome back, " .. Player.Name,
-        SaveConfig    = true,
-        ConfigFolder  = "LucasHubConfig",
-        PremiumIds    = PremiumIds
+        Name         = "LucasHub | by radiov32waves",
+        IntroEnabled = true,
+        IntroText    = "Welcome back, " .. Player.Name,
+        SaveConfig   = true,
+        ConfigFolder = "LucasHubConfig",
+        PremiumIds   = PremiumIds
     })
 
     -- =================== TABS ===================
@@ -57,7 +57,7 @@ function LoadScript()
 
     -- ================== ADOPT ME ==================
     AdoptMeTab:AddSection({ Name = "Adopt Me Scripts" })
-    AdoptMeTab:AddButton({ Name = "TbiGui  [Need Key]",    Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c29af06acdb7a80fb239415fd322efe9.lua"))() end })
+    AdoptMeTab:AddButton({ Name = "TbiGui  [Need Key]",     Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c29af06acdb7a80fb239415fd322efe9.lua"))() end })
     AdoptMeTab:AddButton({ Name = "Clone House  [Keyless]", Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/051b9ab9e55bc6acf1ead9319bd606ec.lua"))() end })
     AdoptMeTab:AddButton({ Name = "Ragesploit  [Need Key]", Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/875033288c5e99d576622aced60a0c44.lua"))() end })
     AdoptMeTab:AddButton({ Name = "TbiGui V4  [Keyless]",   Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/4a873606f2053bf3067ad6da43b5baee.lua"))() end })
@@ -69,11 +69,11 @@ function LoadScript()
 
     -- ================= BLOX FRUIT =================
     BloxFruitTab:AddSection({ Name = "Blox Fruit Scripts" })
-    BloxFruitTab:AddButton({ Name = "Redz Hub  [Not Working]",    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))({ JoinTeam = "Pirates", Translator = true }) end })
-    BloxFruitTab:AddButton({ Name = "BlueX Hub  [Need Key]",      Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))() end })
-    BloxFruitTab:AddButton({ Name = "Gravity Hub  [Keyless]",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))() end })
-    BloxFruitTab:AddButton({ Name = "Kaitun  [Keyless]",          Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Kaitun.lua"))() end })
- BloxFruitTab:AddButton({ Name = "BlueX Hub FindFruit  [Keyless]", Callback = function()
+    BloxFruitTab:AddButton({ Name = "Redz Hub  [Not Working]",       Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))({ JoinTeam = "Pirates", Translator = true }) end })
+    BloxFruitTab:AddButton({ Name = "BlueX Hub  [Need Key]",         Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))() end })
+    BloxFruitTab:AddButton({ Name = "Gravity Hub  [Keyless]",        Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))() end })
+    BloxFruitTab:AddButton({ Name = "Kaitun  [Keyless]",             Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Kaitun.lua"))() end })
+    BloxFruitTab:AddButton({ Name = "BlueX Hub FindFruit  [Keyless]", Callback = function()
         getgenv().Config = {
             ["Setting"] = {
                 ["Team"]                  = "Pirates",
@@ -96,10 +96,10 @@ function LoadScript()
         }
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/FindFruits.lua"))()
     end })
-
-    BloxFruitTab:AddButton({ Name = "Find Fruit  [Keyless]",      Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/FindFruit.lua"))() end })
-    BloxFruitTab:AddButton({ Name = "Auto Bounty  [Not Working]", Callback = function() loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/09eeb45f4cc3ad5a"))() end })
-    BloxFruitTab:AddButton({ Name = "Teddy Hub Boss  [Need Key]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))() end })
+    BloxFruitTab:AddButton({ Name = "Find Fruit  [Keyless]",         Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/FindFruit.lua"))() end })
+    BloxFruitTab:AddButton({ Name = "Auto Bounty  [Not Working]",    Callback = function() loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/09eeb45f4cc3ad5a"))() end })
+    BloxFruitTab:AddButton({ Name = "Teddy Hub Boss  [Need Key]",    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))() end })
+    BloxFruitTab:AddParagraph("More scripts coming soon, stay tuned!")
 
     -- ================= 99 NIGHTS ==================
     Night99Tab:AddSection({ Name = "99 Night Scripts" })
@@ -125,11 +125,11 @@ function LoadScript()
 
     -- ================= BROOKHAVEN ==================
     brookTab:AddSection({ Name = "Brookhaven Scripts" })
-    brookTab:AddButton({ Name = "Sander XY Script  [Keyless]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/testUIDK/refs/heads/main/panel.lua", true))() end })
-    brookTab:AddButton({ Name = "Cartola Hub  [Need Key]",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Davi999z/Cartola-Hub/refs/heads/main/Brookhaven", true))() end })
+    brookTab:AddButton({ Name = "Sander XY Script  [Keyless]",   Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/testUIDK/refs/heads/main/panel.lua", true))() end })
+    brookTab:AddButton({ Name = "Cartola Hub  [Need Key]",        Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Davi999z/Cartola-Hub/refs/heads/main/Brookhaven", true))() end })
     brookTab:AddButton({ Name = "SP Hub  [Keyless]  --TakesTime", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Brookhaven"))() end })
-    brookTab:AddButton({ Name = "XXXOMERHub  [Keyless]",       Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/LCmR8qkj"))() end })
-    brookTab:AddButton({ Name = "Ice Hub  [Need Key]",         Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Waza80/scripts-new/main/IceHubBrookhaven.lua"))() end })
+    brookTab:AddButton({ Name = "XXXOMERHub  [Keyless]",          Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/LCmR8qkj"))() end })
+    brookTab:AddButton({ Name = "Ice Hub  [Need Key]",            Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Waza80/scripts-new/main/IceHubBrookhaven.lua"))() end })
     brookTab:AddParagraph("More scripts coming soon, stay tuned!")
 
     -- ================= SLIME RNG ===================
@@ -156,7 +156,8 @@ function LoadScript()
             Nova:MakeNotification({ Name = "LucasHub", Content = "Bypass link copied to clipboard!", Time = 3 })
         end
     })
-    SettingsTab:AddButton({ Name = "AutoClicker",     Callback = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-OP-autoclicker-21838"))() end })
+    SettingsTab:AddSection({ Name = "Universal Scripts" })
+    SettingsTab:AddButton({ Name = "AutoClicker  [Keyless]", Callback = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-OP-autoclicker-21838"))() end })
 
     Nova:Init()
 end
