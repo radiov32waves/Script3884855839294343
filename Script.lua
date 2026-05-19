@@ -73,27 +73,29 @@ function LoadScript()
     BloxFruitTab:AddButton({ Name = "BlueX Hub  [Need Key]",      Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))() end })
     BloxFruitTab:AddButton({ Name = "Gravity Hub  [Keyless]",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))() end })
     BloxFruitTab:AddButton({ Name = "Kaitun  [Keyless]",          Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Kaitun.lua"))() end })
-        BloxFruitTab:AddButton({ Name = "BlueX Hub FindFruit  [Keyless]"  Callback = function() getgenv().Config = {
-["Setting"] = {
-["Team"] = "Pirates", -- Pirates/Marines
-["White Screen"] = false,
-["Remove Notification"] = false,
-["Random Fruits"] = false,
-["Delay Hop"] = 4, -- Second
-["Method Collect Fruits"] = "Tween", -- Tween/Teleport
-["Use Teleport Portal"] = false
-},
-["Farm"] = {
-["Weapon Attack"] = "Sword", -- Melee/Sword/Fruit
-["Farm Factory"] = true,
-["Farm Raid Castle"] = true
-},
-["Webhook"] = {
-["Url Webhook"] = "",
-["Enable"] = false
-}
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/FindFruits.lua"))() end })
+ BloxFruitTab:AddButton({ Name = "BlueX Hub FindFruit  [Keyless]", Callback = function()
+        getgenv().Config = {
+            ["Setting"] = {
+                ["Team"]                  = "Pirates",
+                ["White Screen"]          = false,
+                ["Remove Notification"]   = false,
+                ["Random Fruits"]         = false,
+                ["Delay Hop"]             = 4,
+                ["Method Collect Fruits"] = "Tween",
+                ["Use Teleport Portal"]   = false
+            },
+            ["Farm"] = {
+                ["Weapon Attack"]    = "Sword",
+                ["Farm Factory"]     = true,
+                ["Farm Raid Castle"] = true
+            },
+            ["Webhook"] = {
+                ["Url Webhook"] = "",
+                ["Enable"]      = false
+            }
+        }
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/FindFruits.lua"))()
+    end })
 
     BloxFruitTab:AddButton({ Name = "Find Fruit  [Keyless]",      Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/FindFruit.lua"))() end })
     BloxFruitTab:AddButton({ Name = "Auto Bounty  [Not Working]", Callback = function() loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/09eeb45f4cc3ad5a"))() end })
