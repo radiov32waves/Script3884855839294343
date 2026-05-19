@@ -21,29 +21,29 @@ local PremiumIds = {
 
 function LoadScript()
     local Window = Nova:MakeWindow({
-        Name = "LucasHub | by radiov32waves",
-        IntroEnabled = true,
-        IntroText = "Welcome back, " .. Player.Name,
-        SaveConfig = true,
-        ConfigFolder = "LucasHubConfig",
-        PremiumIds = PremiumIds
+        Name          = "LucasHub | by radiov32waves",
+        IntroEnabled  = true,
+        IntroText     = "Welcome back, " .. Player.Name,
+        SaveConfig    = true,
+        ConfigFolder  = "LucasHubConfig",
+        PremiumIds    = PremiumIds
     })
 
     -- =================== TABS ===================
-    local MainTab       = Window:MakeTab({Name = "Main",           Icon = "rbxassetid://4483345998"})
-    local AdoptMeTab    = Window:MakeTab({Name = "Adopt Me",       Icon = "rbxassetid://4483345998"})
-    local GreenvilleTab = Window:MakeTab({Name = "Greenville",     Icon = "rbxassetid://4483345998"})
-    local BloxFruitTab  = Window:MakeTab({Name = "Blox Fruit",     Icon = "rbxassetid://4483345998"})
-    local Night99Tab    = Window:MakeTab({Name = "99 Night",       Icon = "rbxassetid://4483345998"})
-    local brainrotTab   = Window:MakeTab({Name = "SABR",           Icon = "rbxassetid://4483345998"})
-    local ninjaTab      = Window:MakeTab({Name = "Ninja Legends",  Icon = "rbxassetid://4483345998"})
-    local brookTab      = Window:MakeTab({Name = "Brookhaven RP",  Icon = "rbxassetid://4483345998"})
-    local slimeTab      = Window:MakeTab({Name = "Slime RNG",      Icon = "rbxassetid://4483345998"})
-    local morescriptTab = Window:MakeTab({Name = "More Coming!",   Icon = "rbxassetid://4483345998"})
-    local SettingsTab   = Window:MakeTab({Name = "Settings",       Icon = "rbxassetid://4483345998"})
+    local MainTab       = Window:MakeTab({ Name = "Main",          Icon = "rbxassetid://4483345998" })
+    local AdoptMeTab    = Window:MakeTab({ Name = "Adopt Me",      Icon = "rbxassetid://4483345998" })
+    local GreenvilleTab = Window:MakeTab({ Name = "Greenville",    Icon = "rbxassetid://4483345998" })
+    local BloxFruitTab  = Window:MakeTab({ Name = "Blox Fruit",    Icon = "rbxassetid://4483345998" })
+    local Night99Tab    = Window:MakeTab({ Name = "99 Night",      Icon = "rbxassetid://4483345998" })
+    local brainrotTab   = Window:MakeTab({ Name = "SABR",          Icon = "rbxassetid://4483345998" })
+    local ninjaTab      = Window:MakeTab({ Name = "Ninja Legends", Icon = "rbxassetid://4483345998" })
+    local brookTab      = Window:MakeTab({ Name = "Brookhaven RP", Icon = "rbxassetid://4483345998" })
+    local slimeTab      = Window:MakeTab({ Name = "Slime RNG",     Icon = "rbxassetid://4483345998" })
+    local morescriptTab = Window:MakeTab({ Name = "More Coming!",  Icon = "rbxassetid://4483345998" })
+    local SettingsTab   = Window:MakeTab({ Name = "Settings",      Icon = "rbxassetid://4483345998" })
 
     -- =================== MAIN ===================
-    MainTab:AddSection({Name = "Information"})
+    MainTab:AddSection({ Name = "Information" })
     MainTab:AddParagraph("Welcome to LucasHub! We keep things running smooth for mobile, so hope you enjoy the scripts.")
     MainTab:AddParagraph("Some scripts may stop working over time. Join our Discord and let us know so we can fix them!")
     MainTab:AddParagraph("Want your favorite script added to LucasHub? Suggest it in our Discord suggestions channel!")
@@ -51,77 +51,110 @@ function LoadScript()
         Name = "Copy Discord Link",
         Callback = function()
             setclipboard("https://discord.gg/pscCWsvM")
-            Nova:MakeNotification({Name = "LucasHub", Content = "Discord link copied to clipboard!", Time = 3})
+            Nova:MakeNotification({ Name = "LucasHub", Content = "Discord link copied to clipboard!", Time = 3 })
         end
     })
 
     -- ================== ADOPT ME ==================
-    AdoptMeTab:AddSection({Name = "Adopt Me Scripts"})
-    AdoptMeTab:AddButton({Name = "TbiGui  (Need-Key)",    Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c29af06acdb7a80fb239415fd322efe9.lua"))() end})
-    AdoptMeTab:AddButton({Name = "Clone House  (Keyless)", Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/051b9ab9e55bc6acf1ead9319bd606ec.lua"))() end})
-    AdoptMeTab:AddButton({Name = "Ragesploit  (Need-Key)", Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/875033288c5e99d576622aced60a0c44.lua"))() end})
-    AdoptMeTab:AddButton({Name = "TbiGui  (Keyless)",      Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/4a873606f2053bf3067ad6da43b5baee.lua"))() end})
+    AdoptMeTab:AddSection({ Name = "Adopt Me Scripts" })
+    AdoptMeTab:AddButton({ Name = "TbiGui  [Need Key]",    Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c29af06acdb7a80fb239415fd322efe9.lua"))() end })
+    AdoptMeTab:AddButton({ Name = "Clone House  [Keyless]", Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/051b9ab9e55bc6acf1ead9319bd606ec.lua"))() end })
+    AdoptMeTab:AddButton({ Name = "Ragesploit  [Need Key]", Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/875033288c5e99d576622aced60a0c44.lua"))() end })
+    AdoptMeTab:AddButton({ Name = "TbiGui V4  [Keyless]",   Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/4a873606f2053bf3067ad6da43b5baee.lua"))() end })
 
     -- ================= GREENVILLE =================
-    GreenvilleTab:AddSection({Name = "Greenville Scripts"})
-    GreenvilleTab:AddButton({Name = "Nexus Script  (Need-Key)", Callback = function() loadstring(game:HttpGet("https://api.xnexus.cc/request/12d2fd60e7a67b48ece6f8fce7167a1d"))() end})
+    GreenvilleTab:AddSection({ Name = "Greenville Scripts" })
+    GreenvilleTab:AddButton({ Name = "Nexus Script  [Need Key]", Callback = function() loadstring(game:HttpGet("https://api.xnexus.cc/request/12d2fd60e7a67b48ece6f8fce7167a1d"))() end })
     GreenvilleTab:AddParagraph("More scripts coming soon, stay tuned!")
 
     -- ================= BLOX FRUIT =================
-    BloxFruitTab:AddSection({Name = "Blox Fruit Scripts"})
-    BloxFruitTab:AddButton({Name = "Redz Hub  (Not-Working)",   Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))({JoinTeam = "Pirates", Translator = true}) end})
-    BloxFruitTab:AddButton({Name = "BlueX Hub  (Need-Key)",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))() end})
-    BloxFruitTab:AddButton({Name = "Gravity Hub  (Keyless)",    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))() end})
-    BloxFruitTab:AddButton({Name = "Kaitun  (Keyless)",         Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Kaitun.lua"))() end})
-    BloxFruitTab:AddButton({Name = "Find Fruit  (Keyless)",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/FindFruit.lua"))() end})
-    BloxFruitTab:AddButton({Name = "Auto Bounty  (Not-Working)",Callback = function() loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/09eeb45f4cc3ad5a"))() end})
-    BloxFruitTab:AddButton({Name = "Teddy Hub Boss  (Need-Key)",Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))() end})
+    BloxFruitTab:AddSection({ Name = "Blox Fruit Scripts" })
+    BloxFruitTab:AddButton({ Name = "Redz Hub  [Not Working]",    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))({ JoinTeam = "Pirates", Translator = true }) end })
+    BloxFruitTab:AddButton({ Name = "BlueX Hub  [Need Key]",      Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))() end })
+    BloxFruitTab:AddButton({ Name = "Gravity Hub  [Keyless]",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))() end })
+    BloxFruitTab:AddButton({ Name = "Kaitun  [Keyless]",          Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Kaitun.lua"))() end })
+        BloxFruitTab:AddButton({ Name = "BlueX Hub FindFruit  [Keyless]"  Callback = function() getgenv().Config = {
+["Setting"] = {
+["Team"] = "Pirates", -- Pirates/Marines
+["White Screen"] = false,
+["Remove Notification"] = false,
+["Random Fruits"] = false,
+["Delay Hop"] = 4, -- Second
+["Method Collect Fruits"] = "Tween", -- Tween/Teleport
+["Use Teleport Portal"] = false
+},
+["Farm"] = {
+["Weapon Attack"] = "Sword", -- Melee/Sword/Fruit
+["Farm Factory"] = true,
+["Farm Raid Castle"] = true
+},
+["Webhook"] = {
+["Url Webhook"] = "",
+["Enable"] = false
+}
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/FindFruits.lua"))() end })
+
+    BloxFruitTab:AddButton({ Name = "Find Fruit  [Keyless]",      Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/FindFruit.lua"))() end })
+    BloxFruitTab:AddButton({ Name = "Auto Bounty  [Not Working]", Callback = function() loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/09eeb45f4cc3ad5a"))() end })
+    BloxFruitTab:AddButton({ Name = "Teddy Hub Boss  [Need Key]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))() end })
 
     -- ================= 99 NIGHTS ==================
-    Night99Tab:AddSection({Name = "99 Night Scripts"})
-    Night99Tab:AddButton({Name = "VapeVoidware  (Keyless)", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))() end})
+    Night99Tab:AddSection({ Name = "99 Night Scripts" })
+    Night99Tab:AddButton({ Name = "VapeVoidware  [Keyless]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))() end })
     Night99Tab:AddParagraph("More scripts coming soon, stay tuned!")
 
     -- ================ STEAL A BRAINROT ================
-    brainrotTab:AddSection({Name = "Steal A Brainrot Scripts"})
-    brainrotTab:AddButton({Name = "Alone & FR Hub  (Keyless)", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/salihmahdu12-ui/SA-ALONE-THE-REAL/refs/heads/main/.SA%20%7C%20SAB.lua", true))() end})
+    brainrotTab:AddSection({ Name = "Steal A Brainrot Scripts" })
+    brainrotTab:AddButton({ Name = "Alone & FR Hub  [Keyless]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/salihmahdu12-ui/SA-ALONE-THE-REAL/refs/heads/main/.SA%20%7C%20SAB.lua", true))() end })
+    brainrotTab:AddButton({ Name = "AjjansHub  [Keyless]",      Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/469095d9d52d9e123298c64aeb62005f.lua"))() end })
+    brainrotTab:AddButton({ Name = "Rift  [Need Key]",          Callback = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end })
+    brainrotTab:AddButton({ Name = "ExpressHub  [Need Key]",    Callback = function() loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d8824b23a4d9f2e0d62b4e69397d206b.lua"))() end })
+    brainrotTab:AddButton({ Name = "Moon Hub  [Keyless]",       Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/KaspikScriptsRb/steal-a-brainrot/refs/heads/main/.lua"))() end })
+    brainrotTab:AddButton({ Name = "PULSAR X  [Need Key]",      Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Estevansit0/KJJK/refs/heads/main/PusarX-loader.lua"))() end })
+    brainrotTab:AddButton({ Name = "Overflow  [Need Key]",      Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/OverflowBGSI/Overflow/refs/heads/main/loader.txt"))() end })
     brainrotTab:AddParagraph("More scripts coming soon, stay tuned!")
 
     -- ================ NINJA LEGENDS ================
-    ninjaTab:AddSection({Name = "Ninja Legends Scripts"})
-    ninjaTab:AddButton({Name = "Zepsyy Script  (Keyless)",  Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninja%20Legends.lua", true))() end})
-    ninjaTab:AddButton({Name = "BiTeC Script  (Need-Key)",  Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/deposible/The-Bitcoin-Script/refs/heads/main/BiTeC.lua", true))() end})
+    ninjaTab:AddSection({ Name = "Ninja Legends Scripts" })
+    ninjaTab:AddButton({ Name = "Zepsyy Script  [Keyless]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninja%20Legends.lua", true))() end })
+    ninjaTab:AddButton({ Name = "BiTeC Script  [Need Key]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/deposible/The-Bitcoin-Script/refs/heads/main/BiTeC.lua", true))() end })
     ninjaTab:AddParagraph("More scripts coming soon, stay tuned!")
 
     -- ================= BROOKHAVEN ==================
-    brookTab:AddSection({Name = "Brookhaven Scripts"})
-    brookTab:AddButton({Name = "Sander XY Script  (Keyless)", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/testUIDK/refs/heads/main/panel.lua", true))() end})
+    brookTab:AddSection({ Name = "Brookhaven Scripts" })
+    brookTab:AddButton({ Name = "Sander XY Script  [Keyless]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kigredns/testUIDK/refs/heads/main/panel.lua", true))() end })
+    brookTab:AddButton({ Name = "Cartola Hub  [Need Key]",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Davi999z/Cartola-Hub/refs/heads/main/Brookhaven", true))() end })
+    brookTab:AddButton({ Name = "SP Hub  [Keyless]  --TakesTime", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Brookhaven"))() end })
+    brookTab:AddButton({ Name = "XXXOMERHub  [Keyless]",       Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/LCmR8qkj"))() end })
+    brookTab:AddButton({ Name = "Ice Hub  [Need Key]",         Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Waza80/scripts-new/main/IceHubBrookhaven.lua"))() end })
     brookTab:AddParagraph("More scripts coming soon, stay tuned!")
 
     -- ================= SLIME RNG ===================
-    slimeTab:AddSection({Name = "Slime RNG Scripts"})
-    slimeTab:AddButton({Name = "JN HH Gaming  (Keyless)",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Slime-Rng/refs/heads/main/JN%20HH%20Gaming"))() end})
-    slimeTab:AddButton({Name = "Chiyo Script  (Need-Key)",    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kaisenlmao/loader/refs/heads/main/chiyo.lua"))() end})
-    slimeTab:AddButton({Name = "Speed Hub X  (Need-Key)",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() end})
-    slimeTab:AddButton({Name = "Rift Script  (Need-Key)",     Callback = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end})
-    slimeTab:AddButton({Name = "Axoeynic/Echo  (Keyless)",    Callback = function() loadstring(game:HttpGet("https://vss.pandadevelopment.net/virtual/file/475911550cec4d6d"))() end})
-    slimeTab:AddButton({Name = "FractHub  (Need-Key)",        Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/mentayuu/script/refs/heads/main/script.lua"))() end})
+    slimeTab:AddSection({ Name = "Slime RNG Scripts" })
+    slimeTab:AddButton({ Name = "JN HH Gaming  [Keyless]",  Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Slime-Rng/refs/heads/main/JN%20HH%20Gaming"))() end })
+    slimeTab:AddButton({ Name = "Chiyo Script  [Need Key]", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kaisenlmao/loader/refs/heads/main/chiyo.lua"))() end })
+    slimeTab:AddButton({ Name = "Speed Hub X  [Need Key]",  Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))() end })
+    slimeTab:AddButton({ Name = "Rift Script  [Need Key]",  Callback = function() loadstring(game:HttpGet("https://rifton.top/loader.lua"))() end })
+    slimeTab:AddButton({ Name = "Echo Hub  [Keyless]",      Callback = function() loadstring(game:HttpGet("https://vss.pandadevelopment.net/virtual/file/475911550cec4d6d"))() end })
+    slimeTab:AddButton({ Name = "FractHub  [Need Key]",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/mentayuu/script/refs/heads/main/script.lua"))() end })
     slimeTab:AddParagraph("More scripts coming soon, stay tuned!")
 
     -- ================ MORE COMING ==================
-    morescriptTab:AddSection({Name = "More Coming!"})
+    morescriptTab:AddSection({ Name = "More Coming!" })
     morescriptTab:AddParagraph("More games and scripts are being added soon. Stay tuned!")
 
     -- ================== SETTINGS ===================
-    SettingsTab:AddSection({Name = "Key Bypass"})
+    SettingsTab:AddSection({ Name = "Key Bypass" })
     SettingsTab:AddParagraph("The link below bypasses key systems. Use at your own risk.")
     SettingsTab:AddButton({
         Name = "Copy 5XY Bypass Link",
         Callback = function()
             setclipboard("https://bypass.5xy.online/")
-            Nova:MakeNotification({Name = "LucasHub", Content = "Bypass link copied to clipboard!", Time = 3})
+            Nova:MakeNotification({ Name = "LucasHub", Content = "Bypass link copied to clipboard!", Time = 3 })
         end
     })
+    SettingsTab:AddButton({ Name = "AutoClicker",     Callback = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-OP-autoclicker-21838"))() end })
 
     Nova:Init()
 end
@@ -135,18 +168,18 @@ local isPremium = table.find(PremiumIds, Player.UserId)
 if isPremium then
     LoadScript()
 else
-    local KeyWindow = Nova:MakeWindow({Name = "LucasHub | Key System", IntroEnabled = false})
-    local VerifyTab = KeyWindow:MakeTab({Name = "Verify", Icon = "rbxassetid://4483345998"})
+    local KeyWindow = Nova:MakeWindow({ Name = "LucasHub | Key System", IntroEnabled = false })
+    local VerifyTab = KeyWindow:MakeTab({ Name = "Verify", Icon = "rbxassetid://4483345998" })
     local EnteredKey = ""
 
-    VerifyTab:AddSection({Name = "Enter Your Key"})
+    VerifyTab:AddSection({ Name = "Enter Your Key" })
     VerifyTab:AddParagraph("Enter your key below to access LucasHub. Click 'Get Key' to obtain one.")
 
     VerifyTab:AddButton({
         Name = "Get Key",
         Callback = function()
             setclipboard("https://radiov32waves.github.io/Key/")
-            Nova:MakeNotification({Name = "LucasHub", Content = "Key website link copied!", Time = 3})
+            Nova:MakeNotification({ Name = "LucasHub", Content = "Key website link copied!", Time = 3 })
         end
     })
 
@@ -168,12 +201,12 @@ else
             end
 
             if success then
-                Nova:MakeNotification({Name = "LucasHub", Content = "Key verified! Loading hub...", Time = 2})
+                Nova:MakeNotification({ Name = "LucasHub", Content = "Key verified! Loading hub...", Time = 2 })
                 task.wait(1)
                 Nova:Destroy()
                 LoadScript()
             else
-                Nova:MakeNotification({Name = "LucasHub", Content = "Invalid key. Please try again.", Time = 3})
+                Nova:MakeNotification({ Name = "LucasHub", Content = "Invalid key. Please try again.", Time = 3 })
             end
         end
     })
