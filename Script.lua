@@ -39,6 +39,7 @@ function LoadScript()
     local ninjaTab      = Window:MakeTab({ Name = "Ninja Legends", Icon = "rbxassetid://4483345998" })
     local brookTab      = Window:MakeTab({ Name = "Brookhaven RP", Icon = "rbxassetid://4483345998" })
     local slimeTab      = Window:MakeTab({ Name = "Slime RNG",     Icon = "rbxassetid://4483345998" })
+    local AirTab      = Window:MakeTab({ Name = "Aircraft Carrier",     Icon = "rbxassetid://4483345998" })
     local morescriptTab = Window:MakeTab({ Name = "More Coming!",  Icon = "rbxassetid://4483345998" })
     local SettingsTab   = Window:MakeTab({ Name = "Settings",      Icon = "rbxassetid://4483345998" })
 
@@ -142,6 +143,12 @@ function LoadScript()
     slimeTab:AddButton({ Name = "FractHub  [Need Key]",     Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/mentayuu/script/refs/heads/main/script.lua"))() end })
     slimeTab:AddParagraph("More scripts coming soon, stay tuned!")
 
+AirTab:AddSection({ Name = "Aircraft Carrier Scripts" })
+AirTab:AddButton({ Name = "Ru-ff",  Callback = function() loadstring(game:HttpGet("https://pastebin.com/yJfpqbzs"))() end })
+AirTab:AddParagraph("More scripts coming soon, stay tuned!")
+
+
+    
     -- ================ MORE COMING ==================
     morescriptTab:AddSection({ Name = "More Coming!" })
     morescriptTab:AddParagraph("More games and scripts are being added soon. Stay tuned!")
