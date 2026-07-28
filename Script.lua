@@ -144,7 +144,7 @@ function LoadScript()
     slimeTab:AddParagraph("More scripts coming soon, stay tuned!")
 
 AirTab:AddSection({ Name = "Aircraft Carrier Scripts" })
-AirTab:AddButton({ Name = "Ru-ff",  Callback = function() loadstring(game:HttpGet("https://pastebin.com/yJfpqbzs"))() end })
+AirTab:AddButton({ Name = "Ru-ff",  Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/yJfpqbzs"))() end })
 AirTab:AddParagraph("More scripts coming soon, stay tuned!")
 
 
